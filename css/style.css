@@ -5,6 +5,10 @@
 
 [class*="col-"] {
     background-color: #006CFA;
-    line-height: 40px;
     text-align: center;
+    padding: 0.5rem
+}
+
+.green {
+    background-color: rgb(86, 205, 50);
 }
