@@ -25,6 +25,8 @@
     --gutterSM: 4px;
     --gutterMD: 6px;
     --gutterLG: 8px;
+
+    overflow-x: hidden;
 }
 
 .row {
