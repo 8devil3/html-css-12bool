@@ -7,18 +7,21 @@
 }
 
 :root {
-    --col-01: calc((100% / 12) * 1);
-    --col-02: calc((100% / 12) * 2);
-    --col-03: calc((100% / 12) * 3);
-    --col-04: calc((100% / 12) * 4);
-    --col-05: calc((100% / 12) * 5);
-    --col-06: calc((100% / 12) * 6);
-    --col-07: calc((100% / 12) * 7);
-    --col-08: calc((100% / 12) * 8);
-    --col-09: calc((100% / 12) * 9);
-    --col-10: calc((100% / 12) * 10);
-    --col-11: calc((100% / 12) * 11);
-    --col-12: calc((100% / 12) * 12);
+    --col-01: calc(((100% / 12) * 1) - var(--gutter));
+    --col-02: calc(((100% / 12) * 2) - var(--gutter));
+    --col-03: calc(((100% / 12) * 3) - var(--gutter));
+    --col-04: calc(((100% / 12) * 4) - var(--gutter));
+    --col-05: calc(((100% / 12) * 5) - var(--gutter));
+    --col-06: calc(((100% / 12) * 6) - var(--gutter));
+    --col-07: calc(((100% / 12) * 7) - var(--gutter));
+    --col-08: calc(((100% / 12) * 8) - var(--gutter));
+    --col-09: calc(((100% / 12) * 9) - var(--gutter));
+    --col-10: calc(((100% / 12) * 10) - var(--gutter));
+    --col-11: calc(((100% / 12) * 11) - var(--gutter));
+    --col-12: calc(((100% / 12) * 12) - var(--gutter));
+
+    /* gutter verticale e orizzontale: in questo esercizio li imposto uguali */
+    --gutter: 2px;
 }
 
 .row {
@@ -145,6 +148,18 @@
 }
 
 
+/* gutter */
+.gut-xs-hz {
+    margin: 0 calc(var(--gutter) / 2);
+}
+
+.gut-xs-vt {
+    padding: calc(var(--gutter) / 2) 0;
+}
+
+
+
+
 
 
 /*######## SM ########*/
@@ -261,8 +276,17 @@
     .col-sm-offset-12 {
         margin-left: var(--col-12);
     }
-}
 
+
+    /* gutter */
+    .gut-sm-hz {
+        margin: 0 calc(var(--gutter) * 1.2 / 2);
+    }
+
+    .gut-sm-vt {
+        padding: calc(var(--gutter) * 1.2 / 2) 0;
+    }
+}
 
 
 
@@ -382,8 +406,17 @@
     .col-md-offset-12 {
         margin-left: var(--col-12);
     }
-}
 
+
+    /* gutter */
+    .gut-md-hz {
+        margin: 0 calc(var(--gutter) * 1.4 / 2);
+    }
+
+    .gut-md-vt {
+        padding: calc(var(--gutter) * 1.4 / 2) 0;
+    }
+}
 
 
 
@@ -502,6 +535,15 @@
 
     .col-lg-offset-12 {
         margin-left: var(--col-12);
+    }
+
+    /* gutter */
+    .gut-lg-hz {
+        margin: 0 calc(var(--gutter) * 1 / 2);
+    }
+
+    .gut-lg-vt {
+        padding: calc(var(--gutter) * 1 / 2) 0;
     }
 
 
