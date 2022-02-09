@@ -101,6 +101,16 @@
 }
 
 
+/* gutter */
+.gut-xs-hz {
+    margin: 0 calc(var(--gutterXS) / 2);
+}
+
+.gut-xs-vt {
+    padding: calc(var(--gutterXS) / 2) 0;
+}
+
+
 /* offset */
 .col-xs-offset-1 {
     margin-left: var(--col-01);
@@ -151,18 +161,8 @@
 }
 
 
-/* gutter */
-.gut-xs-hz {
-    margin: 0 calc(var(--gutterXS) / 2);
-}
-
-.gut-xs-vt {
-    padding: calc(var(--gutterXS) / 2) 0;
-}
-
-
 /* container */
-.container {
+.containerXS {
     margin: 1rem calc((var(--gutterXS) / 2) * -1);
 }
 
@@ -235,6 +235,16 @@
     }
 
 
+    /* gutter */
+    .gut-sm-hz {
+        margin: 0 calc(var(--gutter) / 2);
+    }
+
+    .gut-sm-vt {
+        padding: calc(var(--gutter) / 2) 0;
+    }
+
+
     /* offset */
     .col-sm-offset-1 {
         margin-left: var(--col-01);
@@ -285,18 +295,8 @@
     }
 
 
-    /* gutter */
-    .gut-sm-hz {
-        margin: 0 calc(var(--gutter) / 2);
-    }
-
-    .gut-sm-vt {
-        padding: calc(var(--gutter) / 2) 0;
-    }
-
-
     /* container */
-    .container {
+    .containerSM {
         margin: 1rem calc((var(--gutterSM) / 2) * -1);
     }
 }
@@ -371,6 +371,16 @@
     }
 
 
+    /* gutter */
+    .gut-md-hz {
+        margin: 0 calc(var(--gutter) / 2);
+    }
+
+    .gut-md-vt {
+        padding: calc(var(--gutter) / 2) 0;
+    }
+
+
     /* offset */
     .col-md-offset-1 {
         margin-left: var(--col-01);
@@ -421,18 +431,8 @@
     }
 
 
-    /* gutter */
-    .gut-md-hz {
-        margin: 0 calc(var(--gutter) / 2);
-    }
-
-    .gut-md-vt {
-        padding: calc(var(--gutter) / 2) 0;
-    }
-
-
     /* container */
-    .container {
+    .containerMD {
         margin: 1.5rem calc((var(--gutterMD) / 2) * -1);
     }
 }
@@ -507,6 +507,16 @@
     }
 
 
+    /* gutter */
+    .gut-lg-hz {
+        margin: 0 calc(var(--gutter) / 2);
+    }
+
+    .gut-lg-vt {
+        padding: calc(var(--gutter) / 2) 0;
+    }
+
+
     /* offset */
     .col-lg-offset-1 {
         margin-left: var(--col-01);
@@ -557,17 +567,8 @@
     }
 
 
-    /* gutter */
-    .gut-lg-hz {
-        margin: 0 calc(var(--gutter) / 2);
-    }
-
-    .gut-lg-vt {
-        padding: calc(var(--gutter) / 2) 0;
-    }
-
     /* container */
-    .container {
+    .containerLG {
         margin: 1.5rem calc((var(--gutterLG) / 2) * -1);
     }
 
